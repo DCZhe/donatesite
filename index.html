@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">DCZhe 捐赠</title>
+    <link rel="icon" href="images/DCZhe.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar-container">
+                <img src="images/DCZhe.png" alt="DCZhe 头像" class="avatar">
+                <div id="avatar-tooltip" class="tooltip">每一份善意都在点亮他人的世界，感谢您的温暖前行</div>
+            </div>
+            <h1 id="main-title">DCZhe</h1>
+        </header>
+
+        <main>
+            <p id="slogan">点点微光,终成星河</p>
+            <div class="donation-buttons">
+                <button id="paypal-btn" class="btn paypal-icon" title="PayPal"><img src="images/paypal_icon.svg" alt="PayPal"></button>
+                <button id="wechat-btn" class="btn wechat-icon" title="微信"><img src="images/wechat_icon.svg" alt="微信" data-title-cn="微信" data-title-en="WeChat"></button>
+                <button id="alipay-btn" class="btn alipay-icon" title="支付宝"><img src="images/alipay_icon.svg" alt="支付宝" data-title-cn="支付宝" data-title-en="Alipay"></button>
+                <button id="btc-btn" class="btn btc-icon" title="比特币"><img src="images/btc_icon.svg" alt="比特币" data-title-cn="比特币" data-title-en="Bitcoin"></button>
+                <button id="eth-btn" class="btn eth-icon" title="以太坊"><img src="images/eth_icon.svg" alt="以太坊" data-title-cn="以太坊" data-title-en="Ethereum"></button>
+            </div>
+        </main>
+
+        <footer>
+            <p id="copyright-text">Copyright &copy; 2025 刁传喆 | dczhe.org</p>
+            <p>
+                <a href="mailto:dcze816@gmail.com" id="contact-me-link">联系我</a> | 
+                <a href="#" id="about-me-link">关于我</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- 弹窗 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-qr-image" src="" alt="QR Code">
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
