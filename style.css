@@ -50,12 +50,14 @@ header {
     border-radius: 6px;
     padding: 10px;
     position: absolute;
-    z-index: 1;
+    z-index: 9999; /* 保证气泡在最上层 */
     bottom: 125%; /* 定位在头像上方 */
     left: 50%;
     margin-left: -100px; /* 使用负边距将提示居中 */
     opacity: 0;
     transition: opacity 0.3s;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    word-break: break-all;
 }
 
 .tooltip::after {
@@ -140,61 +142,93 @@ main p {
 
 /* Responsive adjustments for donation buttons */
 @media (max-width: 600px) {
-    .donation-buttons {
-        flex-direction: column; /* Stack buttons vertically on small screens */
-        align-items: center; /* Center buttons when stacked */
-        gap: 10px; /* Reduce gap for vertical layout */
+    body {
+        padding: 5px;
     }
-
-    .btn {
-        width: 100%; /* Make buttons take full width of their container */
-        max-width: 280px; /* Limit max width to prevent them from being too wide */
-        border-radius: 8px; /* Adjust border-radius for a more rectangular look if preferred */
-        padding: 12px; /* Adjust padding */
-        font-size: 0.9em; /* Slightly smaller font */
-    }
-
-    .btn img {
-        margin-right: 8px; /* Add some space between icon and text if text were present */
-    }
-
     .container {
-        padding: 20px;
+        padding: 10px 2vw;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
-
+    header {
+        margin-bottom: 10px;
+    }
+    .avatar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-bottom: 10px;
+    }
     .avatar {
-        width: 100px;
-        height: 100px;
+        width: 72px;
+        height: 72px;
+        margin-bottom: 8px;
     }
-
+    .tooltip {
+        width: 90vw;
+        max-width: 260px;
+        min-width: 120px;
+        left: 50%;
+        margin-left: -45vw;
+        font-size: 0.95em;
+        padding: 10px 8px;
+        z-index: 9999;
+        bottom: 110%;
+        box-sizing: border-box;
+        word-break: break-all;
+    }
+    .tooltip::after {
+        left: 50%;
+        margin-left: -5px;
+    }
+    .donation-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        margin-bottom: 18px;
+    }
+    .btn {
+        width: 100%;
+        max-width: 260px;
+        border-radius: 10px;
+        padding: 12px 0;
+        font-size: 1em;
+        margin: 0 auto 8px auto;
+    }
+    .btn img {
+        margin-right: 0;
+    }
     h1 {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        margin-bottom: 6px;
     }
-
     main p {
         font-size: 1em;
-    }
-
-    .tooltip {
-        width: 180px;
-        margin-left: -90px;
-        font-size: 0.9em;
+        margin-bottom: 18px;
     }
 }
 
 @media (max-width: 400px) {
+    .container {
+        padding: 4px 1vw;
+    }
     .btn {
-        max-width: 240px;
+        max-width: 98vw;
+        font-size: 0.95em;
     }
     .avatar {
-        width: 80px;
-        height: 80px;
+        width: 56px;
+        height: 56px;
     }
     .tooltip {
-        width: 150px;
-        margin-left: -75px;
-        font-size: 0.8em;
-        bottom: 115%;
+        width: 98vw;
+        min-width: 80px;
+        max-width: 180px;
+        margin-left: -49vw;
+        font-size: 0.85em;
+        bottom: 120%;
+        padding: 8px 4px;
     }
 }
 .btn.paypal-icon:hover {
