@@ -19,8 +19,8 @@ const translations = {
         alipayModalTitle: "Alipay",
         btcModalTitle: "Bitcoin (BTC)",
         ethModalTitle: "Ethereum (ETH)",
-        btcAddressText: "Receiving Address: bitcoin:bc1qseh2xs8mmml6hyxt92tluljm2mw8vrjjhn8vkc?message=DCZhe",
-        ethAddressText: "Receiving Address: 0xF504d2cB9C6f226e2f16443abeA5138CD008DD38"
+        btcAddressText: "Receiving Address: bitcoin:bc1qvse7hy9nzfdrgngt0y4rrt2ckknufaepg5gx74",
+        ethAddressText: "Receiving Address: 0x85279E8a679f72558BAA7c4235d17759471541A6"
     },
     zh: {
         pageTitle: "DCZhe 捐赠",
@@ -32,18 +32,18 @@ const translations = {
         alipayTitle: "支付宝",
         btcTitle: "比特币",
         ethTitle: "以太坊",
-        copyrightText: "Copyright &copy; 2025 刁传喆 | dczhe.org",
+        copyrightText: "Copyright &copy; 2025 DCZhe | dczhe.com",
         contactMeLink: "联系我",
         aboutMeLink: "关于我",
         aboutMeModalTitle: "关于我",
-        aboutMeModalContent: "我是刁传喆，一名正在成长的开发者，<br>对技术、艺术、电影、区块链和一切值得学习的事物保持热情。",
+        aboutMeModalContent: "我是DCZhe，一名开发者，<br>对技术、艺术、电影、区块链和一切值得学习的事物保持热情。",
         donationThankYouTitle: "来自DCZhe的感谢",
         wechatModalTitle: "微信支付",
         alipayModalTitle: "支付宝",
         btcModalTitle: "比特币 (BTC)",
         ethModalTitle: "以太坊 (ETH)",
-        btcAddressText: "收款地址: bitcoin:bc1qseh2xs8mmml6hyxt92tluljm2mw8vrjjhn8vkc?message=DCZhe",
-        ethAddressText: "收款地址: 0xF504d2cB9C6f226e2f16443abeA5138CD008DD38"
+        btcAddressText: "收款地址: bitcoin:bc1qvse7hy9nzfdrgngt0y4rrt2ckknufaepg5gx74",
+        ethAddressText: "收款地址: 0x85279E8a679f72558BAA7c4235d17759471541A6"
     }
 };
 
